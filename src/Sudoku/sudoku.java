@@ -99,7 +99,7 @@ public class sudoku extends JFrame {
         		gridPanel.add(grid[i][j]);
         	}
         }
-        
+        // padding empty border? or strut?
         overall.add(gridPanel);
         overall.add(Box.createHorizontalStrut(50));
         overall.add(numPad);
@@ -158,7 +158,15 @@ public class sudoku extends JFrame {
 	}
 	
 	public boolean checkWin(button b) {
+		boolean check = true;
 		//System.out.println("Your input: " + b.getInput() + " Correct Num: " + b.getAns());
+		for(int i = 0; i < numbers.length; i++) {
+			for(int j = 0; j < numbers[0].length; j++) {
+				if(numbers[i][j] == b.getAns()) {
+					check = false;
+				}
+			}
+		}
 		if(b.getAns() == b.getInput())
 			return true;
 		return false;
