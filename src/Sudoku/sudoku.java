@@ -99,7 +99,7 @@ public class sudoku extends JFrame {
         		gridPanel.add(grid[i][j]);
         	}
         }
-        // padding empty border? or strut?
+        // padding empty border? or strut? 
         overall.add(gridPanel);
         overall.add(Box.createHorizontalStrut(50));
         overall.add(numPad);

@@ -9,6 +9,7 @@ import javax.swing.border.LineBorder;
 
 public class userButton extends JButton{
 	int value;
+	
 	public userButton(int val) {
 		value = val;
 		this.setText(""+ value);

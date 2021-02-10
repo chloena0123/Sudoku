@@ -22,6 +22,7 @@ public class clicks implements ActionListener{
 			if(!click.getDisplay() && game.getCurrentNum() != 0 && click.getBackground()!= c ) {
 				click.setDisplay(game.getCurrentNum());
 				if(game.checkWin(click)) {
+					// currently changes the background color for the button
 					click.setBackground(c);
 				}
 					
